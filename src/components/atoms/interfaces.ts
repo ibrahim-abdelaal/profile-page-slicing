@@ -1,58 +1,36 @@
 export interface IconButtonProps {
-  name: string;
   href: string;
-  textColor: string;
-  bgColor: string;
   children: JSX.Element;
-  iconToRight?: boolean;
 }
 
-export interface GradientIconButtonProps {
+export interface PrimaryButtonProps {
   name: string;
-  href: string;
-  textColor: string;
-  fromColor: string;
-  toColor: string;
-  children: JSX.Element;
-  iconToRight?: boolean;
+  onClick: Function;
+  isSquare?: boolean;
 }
 
-export interface BasicButtonProps {
+export interface SecondaryButtonProps {
   name: string;
-  href: string;
-  textColor: string;
-  fromColor: string;
-  toColor: string;
+  onClick: Function;
 }
 
-export interface BasicImageProps {
+export interface CircleImageProps {
   src: string;
-  width?: string;
-  height?: string;
-  topRounded?: boolean;
+  borderColor?: string;
 }
 
-export interface ClickableImageProps {
-  src: string;
-  href: string;
-  width?: string;
-  height?: string;
-  topRounded?: boolean;
-}
-
-export interface BasicInputProps {
+export interface InputFieldProps {
   name: string;
   type: string;
-  placeholder: string;
   value: string;
   onChange: Function;
+  placeholder?: string;
+  bottomBorder?: boolean;
 }
 
-export interface Product {
-  id: string;
-  productName: string;
-  colorRange: string[];
-  sizeRange: string[];
-  src: string;
-  href: string;
+export interface SelectFieldProps { 
+  onChange: Function;   value: string;
+  options: {id: string, value: string}[];
+  name?: string;
+  bottomBorder?: boolean;
 }

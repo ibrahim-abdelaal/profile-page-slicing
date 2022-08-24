@@ -9,8 +9,7 @@
 >* ProfilePic:  <span style="color:white; background-color:green;border-radius:15%;padding:3px">green</span>
 >* PrimaryButton:  <span style="color:black; background-color:yellow;border-radius:15%;padding:3px">yellow</span>
 >* SecondaryButton:  <span style="color:white; background-color:black;border-radius:15%;padding:3px">black</span>
->* IconButton (all icons):  <span style="color:white; background-color:blue;border-radius:15%;padding:3px">blue</span>
->* SelectButton:  <span style="color:white; background-color:darkred;border-radius:15%;padding:3px">dark red</span>
+>* IconButton:  <span style="color:white; background-color:blue;border-radius:15%;padding:3px">blue</span>
 >* InputField:  <span style="color:white; background-color:purple;border-radius:15%;padding:3px">purple</span>
 >* SelectField:  <span style="color:black; background-color:pink;border-radius:15%;padding:3px">pink</span>
 >* CircleImage:  <span style="color:black; background-color:orange;border-radius:15%;padding:3px">orange</span>

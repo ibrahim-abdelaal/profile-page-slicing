@@ -41,6 +41,16 @@
       setEamail('');
     };
 
+    /**
+     * Simple validator
+     * 
+     * @returns {boolean}
+     */
+    const isValidForm = (): boolean => {
+      if (firstName.length < 3 || lastName.length < 3 || email.length < 4) return false;
+      return true;
+    };
+
     return (
       <div className='w-96'>
         <InputField name='First name' type='text' onChange={setFirstName} value={firstName} bottomBorder />
@@ -51,7 +61,7 @@
         <InputField name='Email address' type='email' onChange={setEamail} value={email} />
         <div className='mt-20'>
           <SecondaryButton name='Cancel' onClick={handleCancel} />
-          <PrimaryButton name='Save changes' onClick={handleSubmit} />
+          <PrimaryButton isDisabled={!isValidForm()} name='Save changes' onClick={handleSubmit} />
         </div>
       </div>
     );

@@ -9,14 +9,14 @@ export const Heading: FC<{ text: string }> = ({ text }) => (
 
 // Buttons
 
-export const PrimaryButton: FC<PrimaryButtonProps> = ({ name, onClick, isSquare }) => {
+export const PrimaryButton: FC<PrimaryButtonProps> = ({ name, onClick, isSquare, isDisabled }) => {
   const handleOnClick: MouseEventHandler<HTMLButtonElement> = e => {
     e.preventDefault();
     onClick();
   }
 
   return (
-    <button type="submit" className={isSquare ? "bg-blue-800 text-white rounded-lg w-10 h-10 text-xl text-center" : "py-2 px-5 bg-blue-800 text-white rounded-lg"} onClick={ handleOnClick }>{ name }</button>
+    <button disabled={isDisabled} type="submit" className={`${isSquare ? "bg-blue-800 text-white rounded-lg w-10 h-10 text-xl text-center" : "py-2 px-5 bg-blue-800 text-white rounded-lg"} ${isDisabled ? "bg-blue-400" : ""}`} onClick={ handleOnClick }>{ name }</button>
   );
 };
 

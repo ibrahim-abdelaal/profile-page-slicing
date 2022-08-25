@@ -7,6 +7,7 @@ export interface PrimaryButtonProps {
   name: string;
   onClick: Function;
   isSquare?: boolean;
+  isDisabled?: boolean;
 }
 
 export interface SecondaryButtonProps {

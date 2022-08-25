@@ -10,20 +10,36 @@
     const [country, setCountry] = useState<string>('');
     const [email, setEamail] = useState<string>('');
 
-    const handleSubmit = () => {
+    /**
+     * Handle submit
+     * 
+     * @returns {void}
+     */
+    const handleSubmit = (): void => {
       alert('Submitted successfully!');
       clearInputs();
-    }
-    const handleCancel = () => clearInputs();
+    };
 
-    const clearInputs = () => {
+    /**
+     * Handle cancel
+     * 
+     * @returns {void}
+     */
+    const handleCancel = (): void => clearInputs();
+
+    /**
+     * Clear all input fields
+     * 
+     * @returns {void}
+     */
+    const clearInputs = (): void => {
       setFirstName('');
       setLastName('');
       setCompanyName('');
       setNickname('');
       setCountry('');
       setEamail('');
-    }
+    };
 
     return (
       <div className='w-96'>

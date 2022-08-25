@@ -5,9 +5,16 @@ import { languageOptions } from '../../assets/dummuData';
 
 export const NavBar: FC<{}> = ({}) => {
   const [lang, setLang] = useState<string>('En');
-  const handleSelectChange = (selection: string) => {
+  
+  /**
+   * Handle selection change
+   * 
+   * @param {string} selection
+   * @returns {void}
+   */
+  const handleSelectChange = (selection: string): void => {
     setLang(selection);
-  }
+  };
 
   return (
     <div className='flex flex-col items-center justify-between'>
